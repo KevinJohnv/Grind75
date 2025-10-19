@@ -10,6 +10,7 @@ class Solution(object):
         rstring =""
         flag=True
         while len(rstring) < len(word1)+len(word2):
+            print("Reached while + Current:"+rstring)
             if flag:
                 if m1 < len(word1):
                     rstring= rstring+(word1[m1])
@@ -30,5 +31,7 @@ class Solution(object):
                         rstring= rstring+(word1[m1:len(word1)])
                         return rstring
                     else:
+
                         return rstring
                 flag = True
+        return rstring
