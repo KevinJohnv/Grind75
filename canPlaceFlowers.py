@@ -13,14 +13,14 @@ class Solution:
                 print("Reached end")
                 if prev ==0 and count+1 >=n:
                     return True
+                elif count>=n:
+                    return True
                 return False
             elif flowerbed[i+1]==0:
                 if flowerbed[i] == 0 and prev == 0:        
                     prev = 1
                     count +=1
                     print("Found space count =",count)
-                    if count >= n:
-                        return True
                 else:
                     prev = 0
         return False 
